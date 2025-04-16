@@ -1,4 +1,5 @@
 import Footer from './components/Footer.tsx'
+import Navbar from './components/Navbar.tsx'
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <main>
+        <Navbar/>
         <Footer/>
       </main>
     </>
