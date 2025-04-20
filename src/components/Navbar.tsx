@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from 'react-router-dom';
 import { Menu } from "lucide-react"
 import { Button } from "./ui/button"
-import logo from './../../public/icon_vum.png'
+import logo from '/icon_vum.png?url'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
