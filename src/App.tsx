@@ -2,6 +2,7 @@ import Footer from './components/Footer.tsx'
 import Navbar from './components/Navbar.tsx'
 import Hero from './components/Hero.tsx'
 import ServicesSection from './components/Services.tsx'
+import MaintenanceSection from './components/Maintenance.tsx'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <ServicesSection/>
+        <MaintenanceSection/>
         <Footer/>
       </main>
     </>
