@@ -1,4 +1,5 @@
 import { Button } from "./ui/button"
+import { Dialog, DialogContent } from "./ui/dialog";
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Img } from 'react-image';
@@ -62,8 +63,15 @@ const categories = [
 export default function ProjectGallery(){
 
     const [selectedCategory, setSelectedCategory] = useState("all")
+    const [selectedProject, setSelectedProject] = useState<(typeof projects)[0] | null>(null)
+    const [isDialogOpen, setIsDialogOpen] = useState(false)
 
     const filteredProjects = selectedCategory === "all" ? projects : projects.filter((project) => project.category === selectedCategory)
+    const openProjectDialog = (project: (typeof projects)[0]) => {
+        setSelectedProject(project)
+        setIsDialogOpen(true)
+    }
+
 
     return(
         <section id="proyectos" className="py-20 bg-gray-50">
@@ -100,7 +108,7 @@ export default function ProjectGallery(){
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
                         >
-                        <div className="relative group overflow-hidden rounded-lg shadow-md cursor-pointer h-64">
+                        <div className="relative group overflow-hidden rounded-lg shadow-md cursor-pointer h-64" onClick={() => openProjectDialog(project)}>
                             <Img
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
@@ -115,6 +123,36 @@ export default function ProjectGallery(){
                     ))}
                 </div>
 
+                {/* Project Dialog */}
+                <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                    <DialogContent className="max-w-3xl">
+                        {selectedProject && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="relative h-[300px] md:h-[400px]">
+                            <Img
+                                src={selectedProject.image || "/placeholder.svg"}
+                                alt={selectedProject.title}
+                                className="absolute inset-0 w-full h-full object-cover rounded-md"
+                            />
+                            </div>
+                            <div>
+                            <h3 className="text-2xl font-bold mb-2">{selectedProject.title}</h3>
+                            <p className="text-gray-500 mb-4">{selectedProject.location}</p>
+                            <div className="space-y-4">
+                                <p className="text-gray-700">
+                                Proyecto realizado con los más altos estándares de calidad, utilizando vidrio templado de primera
+                                calidad y herrajes importados.
+                                </p>
+                                <p className="text-gray-700">
+                                El cliente quedó completamente satisfecho con el resultado final, destacando la precisión en la
+                                instalación y el acabado profesional.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        )}
+                    </DialogContent>
+                </Dialog>
             </div>
         </section>
     )
