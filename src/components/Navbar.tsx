@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from 'react-router-dom';
 import { Menu } from "lucide-react"
 import { Button } from "./ui/button"
+import logo from './../../public/icon_vum.png'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,9 +29,16 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <div className="relative h-10 w-40">
-            {/* Replace with your actual logo */}
-            <div className="font-bold text-xl text-[#388e3c]">VidriosUM</div>
+          <div className="flex items-center h-10 gap-2">
+          <img 
+            src={logo} 
+            alt="Logo VUM" 
+            className="h-10 w-auto" 
+            width="160" 
+            height="40"
+            loading="eager" 
+          />
+          <div className="font-bold text-xl text-[#388e3c]">Vidrios UM</div>
           </div>
         </Link>
 
