@@ -3,7 +3,7 @@ import { Dialog, DialogContent } from "./ui/dialog";
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Img } from 'react-image';
-
+import balcony from "./../assets/glass_balcony_railings.jpg"
 
 const projects = [
     {
@@ -11,42 +11,42 @@ const projects = [
       title: "División de baño en vidrio templado",
       category: "divisiones",
       location: "Residencial Las Palmas",
-      image: "/placeholder.svg?height=600&width=800",
+      image: balcony,
     },
     {
       id: 2,
       title: "Fachada de vidrio para oficina corporativa",
       category: "fachadas",
       location: "Torre Empresarial Centro",
-      image: "/placeholder.svg?height=600&width=800",
+      image: balcony,
     },
     {
       id: 3,
       title: "Baranda de vidrio para balcón",
       category: "balcones",
       location: "Condominio Vista Mar",
-      image: "/placeholder.svg?height=600&width=800",
+      image: balcony,
     },
     {
       id: 4,
       title: "Puerta de vidrio templado",
       category: "puertas",
       location: "Centro Comercial Plaza",
-      image: "/placeholder.svg?height=600&width=800",
+      image: balcony,
     },
     {
       id: 5,
       title: "Divisiones para oficina",
       category: "divisiones",
       location: "Edificio Corporativo Norte",
-      image: "/placeholder.svg?height=600&width=800",
+      image: balcony,
     },
     {
       id: 6,
       title: "Ventanas panorámicas",
       category: "ventanas",
       location: "Residencia Privada",
-      image: "/placeholder.svg?height=600&width=800",
+      image: balcony,
     },
 ]
   
