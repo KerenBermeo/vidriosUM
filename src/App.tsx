@@ -4,6 +4,7 @@ import Hero from './components/Hero.tsx'
 import ServicesSection from './components/Services.tsx'
 import MaintenanceSection from './components/Maintenance.tsx'
 import ProjectGallery from './components/ProjectGallery.tsx'
+import TestimonialsSection from './components/TestimonialSection.tsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <ServicesSection/>
         <MaintenanceSection/>
         <ProjectGallery/>
+        <TestimonialsSection/>
         <Footer/>
       </main>
     </>
