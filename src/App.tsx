@@ -5,6 +5,8 @@ import ServicesSection from './components/Services.tsx'
 import MaintenanceSection from './components/Maintenance.tsx'
 import ProjectGallery from './components/ProjectGallery.tsx'
 import TestimonialsSection from './components/TestimonialSection.tsx'
+import ContactSection from './components/ContactSection.tsx'
+import WhatsappButton from './components/WhatsappButton.tsx'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <MaintenanceSection/>
         <ProjectGallery/>
         <TestimonialsSection/>
+        <ContactSection/>
+        <WhatsappButton/>
         <Footer/>
       </main>
     </>

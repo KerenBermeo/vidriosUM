@@ -44,46 +44,46 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link
-            to="#servicios"
+          <a
+            href="#servicios"
             className={`font-medium hover:text-[#388e3c] transition-colors ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
           >
             Servicios
-          </Link>
-          <Link
-            to="#mantenimiento"
+          </a>
+          <a
+            href="#mantenimiento"
             className={`font-medium hover:text-[#388e3c] transition-colors ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
           >
             Mantenimiento
-          </Link>
-          <Link
-            to="#proyectos"
+          </a>
+          <a
+            href="#proyectos"
             className={`font-medium hover:text-[#388e3c] transition-colors ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
           >
             Proyectos
-          </Link>
-          <Link
-            to="#testimonios"
+          </a>
+          <a
+            href="#testimonios"
             className={`font-medium hover:text-[#388e3c] transition-colors ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
           >
             Testimonios
-          </Link>
-          <Link
-            to="#contacto"
+          </a>
+          <a
+            href="#contacto"
             className={`font-medium hover:text-[#388e3c] transition-colors ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
           >
             Contacto
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -96,41 +96,41 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 py-4 px-4">
           <div className="flex flex-col space-y-4">
-            <Link
-              to="#servicios"
+            <a
+              href="#servicios"
               className="font-medium text-gray-800 hover:text-[#388e3c] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Servicios
-            </Link>
-            <Link
-              to="#mantenimiento"
+            </a>
+            <a
+              href="#mantenimiento"
               className="font-medium text-gray-800 hover:text-[#388e3c] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Mantenimiento
-            </Link>
-            <Link
-              to="#proyectos"
+            </a>
+            <a
+              href="#proyectos"
               className="font-medium text-gray-800 hover:text-[#388e3c] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Proyectos
-            </Link>
-            <Link
-              to="#testimonios"
+            </a>
+            <a
+              href="#testimonios"
               className="font-medium text-gray-800 hover:text-[#388e3c] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Testimonios
-            </Link>
-            <Link
-              to="#contacto"
+            </a>
+            <a
+              href="#contacto"
               className="font-medium text-gray-800 hover:text-[#388e3c] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contacto
-            </Link>
+            </a>
           </div>
         </div>
       )}

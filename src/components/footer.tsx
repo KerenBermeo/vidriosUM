@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { MapPin, Phone } from "lucide-react"
 
 
@@ -40,43 +39,88 @@ export default function Footer(){
                         <h3 className="text-xl font-bold mb-4">Enlaces rápidos</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link to="/" className="text-green-100 hover:text-white transition-colors">
-                                    Inicio
-                                </Link>
+                            <a href="/" className="text-green-100 hover:text-white transition-colors">
+                                Inicio
+                            </a>
                             </li>
                             <li>
-                                <Link to="#servicios" className="text-green-100 hover:text-white transition-colors">
-                                    Servicios
-                                </Link>
+                            <a href="#servicios" className="text-green-100 hover:text-white transition-colors">
+                                Servicios
+                            </a>
                             </li>
                             <li>
-                                <Link to="#proyectos" className="text-green-100 hover:text-white transition-colors">
-                                    Proyectos
-                                </Link>
+                            <a href="#proyectos" className="text-green-100 hover:text-white transition-colors">
+                                Proyectos
+                            </a>
                             </li>
                             <li>
-                                <Link to="#testimonios" className="text-green-100 hover:text-white transition-colors">
-                                    Testimonios
-                                </Link>
+                            <a href="#testimonios" className="text-green-100 hover:text-white transition-colors">
+                                Testimonios
+                            </a>
                             </li>
                             <li>
-                                <Link to="#contacto" className="text-green-100 hover:text-white transition-colors">
-                                    Contacto
-                                </Link>
+                            <a href="#contacto" className="text-green-100 hover:text-white transition-colors">
+                                Contacto
+                            </a>
                             </li>
                         </ul>
                     </div>
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4">Servicios</h3>
-                        <ul className="space-y-2">
-                            <li className="text-green-100">Divisiones de baño y oficina</li>
-                            <li className="text-green-100">Puertas, ventanas y fachadas</li>
-                            <li className="text-green-100">Balcones, barandas y pasamanos</li>
-                            <li className="text-green-100">Repisas, espejos y techos</li>
-                            <li className="text-green-100">Mantenimiento</li>
-                        </ul>
+                    <h3 className="text-xl font-bold mb-4">Servicios</h3>
+                    <ul className="space-y-2">
+                        <li>
+                        <a 
+                            href="https://wa.me/573123456789?text=Hola%20Vidrios%20UM,%20estoy%20interesado%20en%20Divisiones%20de%20baño%20y%20oficina" 
+                            className="text-green-100 hover:text-white transition-colors block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Divisiones de baño y oficina
+                        </a>
+                        </li>
+                        <li>
+                        <a 
+                            href="https://wa.me/573123456789?text=Hola%20Vidrios%20UM,%20estoy%20interesado%20en%20Puertas,%20ventanas%20y%20fachadas" 
+                            className="text-green-100 hover:text-white transition-colors block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Puertas, ventanas y fachadas
+                        </a>
+                        </li>
+                        <li>
+                        <a 
+                            href="https://wa.me/573123456789?text=Hola%20Vidrios%20UM,%20estoy%20interesado%20en%20Balcones,%20barandas%20y%20pasamanos" 
+                            className="text-green-100 hover:text-white transition-colors block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Balcones, barandas y pasamanos
+                        </a>
+                        </li>
+                        <li>
+                        <a 
+                            href="https://wa.me/573123456789?text=Hola%20Vidrios%20UM,%20estoy%20interesado%20en%20Repisas,%20espejos%20y%20techos" 
+                            className="text-green-100 hover:text-white transition-colors block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Repisas, espejos y techos
+                        </a>
+                        </li>
+                        <li>
+                        <a 
+                            href="https://wa.me/573123456789?text=Hola%20Vidrios%20UM,%20estoy%20interesado%20en%20servicios%20de%20Mantenimiento" 
+                            className="text-green-100 hover:text-white transition-colors block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Mantenimiento
+                        </a>
+                        </li>
+                    </ul>
                     </div>
 
                     {/* Contact Info */}
